@@ -8,6 +8,7 @@ public abstract class Conta implements IConta {
 	protected double saldo;
 	protected Cliente cliente;
 	protected String emprestimo;
+	
 	public Conta(Cliente cliente) {
 		this.agencia = Conta.AGENCIA_PADRAO;
 		this.numero = SEQUENCIAL++;
@@ -73,10 +74,5 @@ public abstract class Conta implements IConta {
 
 	protected void verificarEmprestimo(){
 		System.out.println(getEmprestimo());
-	}
-}
-		System.out.println(String.format("Agencia: %d", this.agencia));
-		System.out.println(String.format("Numero: %d", this.numero));
-		System.out.println(String.format("Saldo: %.2f", this.saldo));
 	}
 }
